@@ -8,6 +8,7 @@
 %% ===================================================================
 build(AppInfo) ->
   AppDir = rebar_app_info:dir(AppInfo),
+  io:format("[lugao] AppDir ~p~n", [AppDir]),
   BuildDir = filename:join(AppDir, "../"),
   BuildElixirDir = filename:join(AppDir, "_build/prod/lib/"),
   AppName = rebar_mix_utils:to_string(rebar_app_info:name(AppInfo)),
