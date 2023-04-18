@@ -37,6 +37,9 @@ tramp
 .cask/
 dist/
 
+.idea/
+rebar_mix.iml
+
 # Flycheck
 flycheck_*.el
 

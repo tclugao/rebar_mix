@@ -91,6 +91,9 @@ add_elixir(State) ->
   code:add_patha(filename:join(LibDir, "elixir/ebin")),
   code:add_patha(filename:join(LibDir, "mix/ebin")),
   code:add_patha(filename:join(LibDir, "logger/ebin")),
+  code:add_patha(filename:join(LibDir, "eex/ebin")),
+  code:add_patha(filename:join(LibDir, "ex_unit/ebin")),
+  code:add_patha(filename:join(LibDir, "iex/ebin")),
   State.
 
 %% @doc Add elixir to the application build path
